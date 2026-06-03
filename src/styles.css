@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-industrial-offwhite text-industrial-slate font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-industrial-dark font-extrabold tracking-tight;
+  }
+}
+
+/* Glassmorphism styling */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-panel-dark {
+  background: rgba(34, 40, 49, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Industrial Grid Accents */
+.industrial-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+}
+
+.industrial-grid-dark {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+/* Metallic Texture Overlay */
+.metal-texture {
+  background-color: #222831;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 0),
+                    radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 0);
+  background-size: 8px 8px;
+  background-position: 0 0, 4px 4px;
+}
+
+/* Custom Micro-animations */
+@keyframes steelPulse {
+  0%, 100% { border-color: rgba(255, 107, 0, 0.4); box-shadow: 0 0 5px rgba(255, 107, 0, 0.2); }
+  50% { border-color: rgba(255, 107, 0, 1); box-shadow: 0 0 15px rgba(255, 107, 0, 0.6); }
+}
+
+.steel-pulse-active {
+  animation: steelPulse 2s infinite ease-in-out;
+}
+
+.transition-all-300 {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom form autofill styling */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #F8F9FA inset !important;
+  -webkit-text-fill-color: #2D3748 !important;
+}
+
+/* Carousel Slide Progress Animation */
+@keyframes progressFill {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+.progress-fill-active {
+  animation: progressFill 5000ms linear forwards;
+}
