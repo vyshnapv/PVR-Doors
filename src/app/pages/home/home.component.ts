@@ -137,7 +137,7 @@ interface Slide {
             <span class="material-icons-round text-3xl">construction</span>
           </div>
           <div>
-            <h3 class="text-2xl font-bold tracking-tight">14+ Years</h3>
+            <h3 class="text-2xl font-bold tracking-tight text-white">14+ Years</h3>
             <p class="text-sm text-gray-400 mt-1 uppercase tracking-wider font-semibold">Of Business Legacy</p>
             <p class="text-gray-300 text-xs mt-2 leading-relaxed">Delivering reliable structure layouts, heavy industrial setups, and trusted local builds since 2012.</p>
           </div>
@@ -149,7 +149,7 @@ interface Slide {
             <span class="material-icons-round text-3xl">star_rate</span>
           </div>
           <div>
-            <h3 class="text-2xl font-bold tracking-tight">4.3 Star Rating</h3>
+            <h3 class="text-2xl font-bold tracking-tight text-white">4.3 Star Rating</h3>
             <p class="text-sm text-gray-400 mt-1 uppercase tracking-wider font-semibold">Customer Rated Service</p>
             <div class="flex items-center space-x-1 mt-1 text-safety-orange">
               <span class="material-icons-round text-sm">star</span>
@@ -168,7 +168,7 @@ interface Slide {
             <span class="material-icons-round text-3xl">verified</span>
           </div>
           <div>
-            <h3 class="text-2xl font-bold tracking-tight">Precision QA</h3>
+            <h3 class="text-2xl font-bold tracking-tight text-white">Precision QA</h3>
             <p class="text-sm text-gray-400 mt-1 uppercase tracking-wider font-semibold">Industrial Quality Control</p>
             <p class="text-gray-300 text-xs mt-2 leading-relaxed">Every weld, cut, and structural joint passes rigid inspection protocols to guarantee lifetime endurance.</p>
           </div>
@@ -312,7 +312,7 @@ interface Slide {
             <span class="material-icons-round ml-2">mail</span>
           </a>
           <a 
-            href="https://wa.me/919847123456?text=Hi%20PVR%20Metals,%20I'd%20like%20to%20get%20a%20fabrication%20quote." 
+            href="https://wa.me/9207045332?text=Hi%20PVR%20Metals,%20I'd%20like%20to%20get%20a%20fabrication%20quote." 
             target="_blank"
             class="inline-flex items-center justify-center bg-white hover:bg-gray-100 text-safety-orange font-bold px-8 py-4 rounded shadow-2xl transition-all duration-300"
           >

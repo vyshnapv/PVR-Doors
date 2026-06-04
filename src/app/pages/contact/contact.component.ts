@@ -200,7 +200,7 @@ import { ActivatedRoute } from '@angular/router';
                   
                   <div class="mt-2 flex items-center space-x-3">
                     <span class="text-lg font-black tracking-tight text-white transition-all duration-300">
-                      {{ phoneVisible ? '+91 98471 23456' : '+91 9847X XXXX' }}
+                      {{ phoneVisible ? '+91 9207045332' : '+91 9207X XXXX' }}
                     </span>
                     <button 
                       (click)="togglePhone()" 
@@ -224,7 +224,7 @@ import { ActivatedRoute } from '@angular/router';
               Skip forms entirely! Chat instantly with our lead engineer on WhatsApp. Send images, drawings, or voice notes.
             </p>
             <a 
-              href="https://wa.me/919847123456?text=Hi%20PVR%20Metals,%20I'd%20like%20to%20enquire%20about%20your%20services." 
+              href="https://wa.me/9207045332?text=Hi%20PVR%20Metals,%20I'd%20like%20to%20enquire%20about%20your%20services." 
               target="_blank"
               class="w-full inline-flex items-center justify-center bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold py-3 rounded transition-all duration-200 text-sm shadow-md shadow-emerald-500/10"
             >
@@ -245,7 +245,7 @@ import { ActivatedRoute } from '@angular/router';
             <span class="block text-gray-400 font-bold uppercase tracking-widest text-[9px]">PVR Hotline</span>
             <span class="text-sm font-black">+91 98471 23456</span>
           </div>
-          <a href="tel:+919847123456" class="p-2 bg-safety-orange rounded text-white hover:bg-safety-amber">
+          <a href="tel:+9207045332" class="p-2 bg-safety-orange rounded text-white hover:bg-safety-amber">
             <span class="material-icons-round text-sm">call</span>
           </a>
         </div>
@@ -270,7 +270,7 @@ import { ActivatedRoute } from '@angular/router';
         </button>
 
         <a 
-          href="https://wa.me/919847123456?text=Hello%20PVR%20Metals" 
+          href="https://wa.me/9207045332?text=Hello%20PVR%20Metals" 
           target="_blank"
           class="flex items-center justify-center w-12 h-12 bg-[#25D366] text-white rounded-full hover:bg-[#20ba5a] shadow-xl transition-colors"
           title="WhatsApp Support"

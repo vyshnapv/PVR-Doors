@@ -54,7 +54,7 @@ import { RouterModule } from '@angular/router';
           <div class="space-y-1.5 pt-2 text-xs font-light">
             <div class="flex items-center text-gray-300">
               <span class="material-icons-round text-sm text-safety-orange mr-2">phone</span>
-              <span>+91 98471 23456</span>
+              <span>+91 9207045332</span>
             </div>
             <div class="flex items-center text-gray-300">
               <span class="material-icons-round text-sm text-safety-orange mr-2">email</span>

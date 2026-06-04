@@ -44,31 +44,6 @@ import { RouterModule } from '@angular/router';
             <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-safety-orange transition-all duration-300 group-hover/nav:w-full"></span>
           </a>
 
-          <!-- Sectors Dropdown -->
-          <div class="relative group">
-            <button class="text-xs font-bold text-gray-300 hover:text-white uppercase tracking-widest transition-colors flex items-center py-2 cursor-pointer focus:outline-none group/nav">
-              <span>Sectors</span>
-              <span class="material-icons-round text-sm ml-0.5 transition-transform duration-300 group-hover:rotate-180">keyboard_arrow_down</span>
-              <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-safety-orange transition-all duration-300 group-hover/nav:w-full"></span>
-            </button>
-            
-            <!-- Smooth Glassmorphic Dropdown -->
-            <div class="absolute top-full left-0 mt-2 w-56 rounded-xl bg-industrial-dark/95 border border-white/10 backdrop-blur-xl shadow-2xl py-3 px-2 z-50 opacity-0 translate-y-3 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300">
-              <a routerLink="/sectors/industrial" class="flex items-center space-x-2 px-3.5 py-2.5 rounded-lg text-[10px] font-extrabold text-gray-300 hover:bg-safety-orange/10 hover:text-white uppercase tracking-wider transition-all duration-200">
-                <span class="w-1.5 h-1.5 rounded-full bg-safety-orange"></span>
-                <span>Industrial Sectors</span>
-              </a>
-              <a routerLink="/sectors/commercial" class="flex items-center space-x-2 px-3.5 py-2.5 rounded-lg text-[10px] font-extrabold text-gray-300 hover:bg-safety-orange/10 hover:text-white uppercase tracking-wider transition-all duration-200">
-                <span class="w-1.5 h-1.5 rounded-full bg-safety-orange"></span>
-                <span>Commercial Buildings</span>
-              </a>
-              <a routerLink="/sectors/infrastructure" class="flex items-center space-x-2 px-3.5 py-2.5 rounded-lg text-[10px] font-extrabold text-gray-300 hover:bg-safety-orange/10 hover:text-white uppercase tracking-wider transition-all duration-200">
-                <span class="w-1.5 h-1.5 rounded-full bg-safety-orange"></span>
-                <span>Infrastructure Projects</span>
-              </a>
-            </div>
-          </div>
-
           <a routerLink="/services" routerLinkActive="text-safety-orange" class="relative text-xs font-bold text-gray-300 hover:text-white uppercase tracking-widest transition-colors py-2 cursor-pointer group/nav">
             Services
             <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-safety-orange transition-all duration-300 group-hover/nav:w-full"></span>
@@ -86,37 +61,20 @@ import { RouterModule } from '@angular/router';
             <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-safety-orange transition-all duration-300 group-hover/nav:w-full"></span>
           </a>
         </nav>
-
-        <!-- Right Side Desktop Group (CTA + Search) -->
+        <!-- Right Side Desktop Group (CTA) -->
         <div class="hidden lg:flex items-center space-x-4">
-          <!-- Search Icon Button -->
-          <button 
-            (click)="toggleSearch()"
-            class="text-gray-300 hover:text-white transition-colors focus:outline-none p-2 rounded-full hover:bg-white/5"
-            title="Search Site"
-          >
-            <span class="material-icons-round text-xl block">search</span>
-          </button>
-          
           <a 
             routerLink="/contact" 
-            class="inline-flex items-center justify-center bg-gradient-to-r from-safety-orange to-safety-amber text-white font-extrabold text-[10px] tracking-widest uppercase px-5 py-2.5 rounded-lg shadow-md hover:shadow-safety-orange/20 transition-all duration-300 hover:-translate-y-0.5 border border-safety-orange/30"
-          >
+            class="inline-flex items-center justify-center bg-gradient-to-r from-safety-orange to-safety-amber text-white font-extrabold text-[10px] tracking-widest uppercase px-5 py-2.5 rounded-lg shadow-md hover:shadow-safety-orange/20 transition-all duration-300 hover:-translate-y-0.5 border border-safety-orange/30">
             <span>Get a Quote</span>
             <span class="material-icons-round text-xs ml-1.5">arrow_forward</span>
           </a>
         </div>
 
+
         <!-- Right Side Mobile Group (Search + Hamburger) -->
         <div class="flex lg:hidden items-center space-x-2">
-          <!-- Mobile Search Icon Button -->
-          <button 
-            (click)="toggleSearch()"
-            class="text-gray-300 hover:text-white transition-colors focus:outline-none p-2 rounded-full hover:bg-white/5"
-            title="Search Site"
-          >
-            <span class="material-icons-round text-xl block">search</span>
-          </button>
+
           
           <!-- Mobile Menu Trigger Button -->
           <button 
@@ -152,24 +110,7 @@ import { RouterModule } from '@angular/router';
           <nav class="flex flex-col space-y-4">
             <a routerLink="/" (click)="closeMobileMenu()" routerLinkActive="text-safety-orange" [routerLinkActiveOptions]="{exact: true}" class="text-xs font-bold text-gray-300 hover:text-white uppercase tracking-widest py-2 border-b border-white/5 transition-colors">Home</a>
             
-            <!-- Mobile Sectors Submenu -->
-            <div class="space-y-2">
-              <span class="text-xs font-bold text-gray-400 uppercase tracking-widest block">Sectors</span>
-              <div class="pl-4 flex flex-col space-y-3 mt-1">
-                <a routerLink="/sectors/industrial" (click)="closeMobileMenu()" class="text-[10px] font-extrabold text-gray-300 hover:text-white uppercase tracking-wider transition-colors flex items-center space-x-2">
-                  <span class="w-1 h-1 rounded-full bg-safety-orange"></span>
-                  <span>Industrial Sectors</span>
-                </a>
-                <a routerLink="/sectors/commercial" (click)="closeMobileMenu()" class="text-[10px] font-extrabold text-gray-300 hover:text-white uppercase tracking-wider transition-colors flex items-center space-x-2">
-                  <span class="w-1 h-1 rounded-full bg-safety-orange"></span>
-                  <span>Commercial Buildings</span>
-                </a>
-                <a routerLink="/sectors/infrastructure" (click)="closeMobileMenu()" class="text-[10px] font-extrabold text-gray-300 hover:text-white uppercase tracking-wider transition-colors flex items-center space-x-2">
-                  <span class="w-1 h-1 rounded-full bg-safety-orange"></span>
-                  <span>Infrastructure Projects</span>
-                </a>
-              </div>
-            </div>
+
 
             <a routerLink="/services" (click)="closeMobileMenu()" routerLinkActive="text-safety-orange" class="text-xs font-bold text-gray-300 hover:text-white uppercase tracking-widest py-2 border-b border-white/5 transition-colors">Services</a>
             <a routerLink="/works" (click)="closeMobileMenu()" routerLinkActive="text-safety-orange" class="text-xs font-bold text-gray-300 hover:text-white uppercase tracking-widest py-2 border-b border-white/5 transition-colors">Our Works</a>
