@@ -28,17 +28,14 @@ import { RouterModule } from '@angular/router';
             We are premier metal builders and bespoke engineers, fabricating high-strength industrial structures and custom metal panels. Rooted in safety, accuracy, and longevity.
           </p>
           <!-- Social Icons -->
-          <div class="flex items-center space-x-4 pt-2">
-            <a href="#" class="text-gray-500 hover:text-safety-orange transition-colors" title="Facebook">
-              <span class="material-icons-round text-lg">public</span>
-            </a>
-            <a href="#" class="text-gray-500 hover:text-safety-orange transition-colors" title="LinkedIn">
-              <span class="material-icons-round text-lg">corporate_fare</span>
-            </a>
-            <a href="#" class="text-gray-500 hover:text-safety-orange transition-colors" title="Instagram">
-              <span class="material-icons-round text-lg">camera</span>
-            </a>
-          </div>
+            <div class="flex items-center space-x-4 pt-2">
+              <a href="https://www.facebook.com/yourpage" class="text-gray-500 hover:text-safety-orange transition-colors" title="Facebook">
+                <span class="material-icons-round text-lg">public</span>
+              </a>
+              <a href="https://www.instagram.com/yourprofile" class="text-gray-500 hover:text-safety-orange transition-colors" title="Instagram">
+                <span class="material-icons-round text-lg">camera</span>
+              </a>
+            </div>
         </div>
 
         <!-- Address and Contact Details (4 cols) -->
