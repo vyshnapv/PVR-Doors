@@ -79,12 +79,7 @@ interface Slide {
         </div>
       </div>
 
-      <!-- Floating Accessibility Widget -->
-      <div class="absolute bottom-28 left-6 md:left-12 z-30 hidden sm:block">
-        <button class="w-10 h-10 bg-emerald-600 hover:bg-emerald-500 rounded-full flex items-center justify-center text-white shadow-lg transition-transform hover:scale-110 focus:outline-none" title="Accessibility Options">
-          <span class="material-icons-round text-xl">accessibility</span>
-        </button>
-      </div>
+
 
       <!-- Bottom Slider Navigation Overlay -->
       <div class="absolute bottom-8 left-6 right-6 md:left-12 md:right-12 z-30 flex items-end justify-between border-t border-white/10 pt-6">
@@ -115,16 +110,6 @@ interface Slide {
           }
         </div>
 
-        <!-- Play/Pause Controls -->
-        <button 
-          (click)="togglePlayPause()" 
-          class="w-10 h-10 border border-white/20 hover:border-white rounded-full flex items-center justify-center text-white hover:bg-white/10 transition-colors focus:outline-none mb-2"
-          [title]="isPlaying ? 'Pause Auto-rotate' : 'Play Auto-rotate'"
-        >
-          <span class="material-icons-round text-lg">
-            {{ isPlaying ? 'pause' : 'play_arrow' }}
-          </span>
-        </button>
       </div>
     </section>
 

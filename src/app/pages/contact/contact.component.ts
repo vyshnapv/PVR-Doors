@@ -158,7 +158,7 @@ import { ActivatedRoute } from '@angular/router';
           
           <!-- Address & Hours Sidebar Card -->
           <div class="bg-industrial-dark text-white p-8 rounded-lg shadow-xl border-l-4 border-safety-orange relative overflow-hidden metal-texture">
-            <h2 class="text-xl font-bold tracking-tight mb-6">P V R Metals</h2>
+            <h2 class="text-xl font-bold tracking-tight mb-6 text-white">P V R Metals</h2>
             
             <div class="space-y-6">
               <!-- Location -->
@@ -200,14 +200,8 @@ import { ActivatedRoute } from '@angular/router';
                   
                   <div class="mt-2 flex items-center space-x-3">
                     <span class="text-lg font-black tracking-tight text-white transition-all duration-300">
-                      {{ phoneVisible ? '+91 9207045332' : '+91 9207X XXXX' }}
+                      +91 9207045332
                     </span>
-                    <button 
-                      (click)="togglePhone()" 
-                      class="px-3 py-1 bg-safety-orange hover:bg-safety-amber text-white text-[10px] uppercase font-bold tracking-widest rounded transition-colors"
-                    >
-                      {{ phoneVisible ? 'Hide' : 'Reveal' }}
-                    </button>
                   </div>
                 </div>
               </div>

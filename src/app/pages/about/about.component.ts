@@ -147,7 +147,7 @@ import { RouterModule } from '@angular/router';
     <!-- Call to Action -->
     <section class="py-20 bg-industrial-dark text-white relative overflow-hidden metal-texture">
       <div class="max-w-5xl mx-auto px-6 relative z-10 text-center space-y-6">
-        <h2 class="text-3xl md:text-4xl font-black">
+        <h2 class="text-3xl md:text-4xl font-black text-white">
           Need a Professional Steel Fabrication Partner?
         </h2>
         <p class="text-gray-300 max-w-xl mx-auto font-light">

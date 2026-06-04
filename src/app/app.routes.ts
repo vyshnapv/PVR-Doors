@@ -21,8 +21,13 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/contact/contact.component').then(m => m.ContactComponent),
     title: 'Contact Us | P V R Metals'
   },
-  {
-    path: '**',
-    redirectTo: ''
-  }
+    {
+      path: 'works',
+      loadComponent: () => import('./pages/works/works.component').then(m => m.WorksComponent),
+      title: 'Our Works | P V R Metals'
+    },
+    {
+      path: '**',
+      redirectTo: ''
+    }
 ];
