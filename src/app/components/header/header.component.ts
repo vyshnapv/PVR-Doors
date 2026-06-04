@@ -73,13 +73,13 @@ import { RouterModule } from '@angular/router';
 
 
         <!-- Right Side Mobile Group (Search + Hamburger) -->
-        <div class="flex lg:hidden items-center space-x-2">
+        <div class="flex lg:hidden items-center space-x-2 ml-auto">
 
           
           <!-- Mobile Menu Trigger Button -->
           <button 
             (click)="toggleMobileMenu()" 
-            class="text-white flex items-center justify-center p-2 rounded-lg hover:bg-white/5 transition-colors"
+            class="text-white flex items-center justify-center p-2 rounded-lg bg-gray-800/60 hover:bg-gray-700/80 transition-colors"
           >
             <span class="material-icons-round text-2xl block">
               {{ isMobileMenuOpen ? 'close' : 'menu' }}
@@ -106,16 +106,16 @@ import { RouterModule } from '@angular/router';
 
       <!-- Mobile Navigation Drawer -->
       @if (isMobileMenuOpen) {
-        <div class="lg:hidden bg-industrial-dark/98 backdrop-blur-xl border-t border-white/10 py-6 px-6 space-y-6 animate-fade-in absolute w-full left-0 top-[100%] shadow-2xl">
+        <div class="lg:hidden bg-gray-900/95 backdrop-blur-xl border-t border-white/20 py-6 px-6 space-y-6 animate-fade-in absolute w-64 right-0 top-[100%] shadow-2xl z-50">
           <nav class="flex flex-col space-y-4">
-            <a routerLink="/" (click)="closeMobileMenu()" routerLinkActive="text-safety-orange" [routerLinkActiveOptions]="{exact: true}" class="text-xs font-bold text-gray-300 hover:text-white uppercase tracking-widest py-2 border-b border-white/5 transition-colors">Home</a>
+            <a routerLink="/" (click)="closeMobileMenu()" routerLinkActive="text-safety-orange" [routerLinkActiveOptions]="{exact: true}" class="text-xs font-bold text-gray-100 hover:text-gray-300 uppercase tracking-widest py-2 border-b border-white/10 transition-colors">Home</a>
             
 
 
-            <a routerLink="/services" (click)="closeMobileMenu()" routerLinkActive="text-safety-orange" class="text-xs font-bold text-gray-300 hover:text-white uppercase tracking-widest py-2 border-b border-white/5 transition-colors">Services</a>
-            <a routerLink="/works" (click)="closeMobileMenu()" routerLinkActive="text-safety-orange" class="text-xs font-bold text-gray-300 hover:text-white uppercase tracking-widest py-2 border-b border-white/5 transition-colors">Our Works</a>
-            <a routerLink="/about" (click)="closeMobileMenu()" routerLinkActive="text-safety-orange" class="text-xs font-bold text-gray-300 hover:text-white uppercase tracking-widest py-2 border-b border-white/5 transition-colors">Who We Are</a>
-            <a routerLink="/contact" (click)="closeMobileMenu()" routerLinkActive="text-safety-orange" class="text-xs font-bold text-gray-300 hover:text-white uppercase tracking-widest py-2 border-b border-white/5 transition-colors">Contact</a>
+            <a routerLink="/services" (click)="closeMobileMenu()" routerLinkActive="text-safety-orange" class="text-xs font-bold text-gray-100 hover:text-gray-300 uppercase tracking-widest py-2 border-b border-white/10 transition-colors">Services</a>
+            <a routerLink="/works" (click)="closeMobileMenu()" routerLinkActive="text-safety-orange" class="text-xs font-bold text-gray-100 hover:text-gray-300 uppercase tracking-widest py-2 border-b border-white/10 transition-colors">Our Works</a>
+            <a routerLink="/about" (click)="closeMobileMenu()" routerLinkActive="text-safety-orange" class="text-xs font-bold text-gray-100 hover:text-gray-300 uppercase tracking-widest py-2 border-b border-white/10 transition-colors">Who We Are</a>
+            <a routerLink="/contact" (click)="closeMobileMenu()" routerLinkActive="text-safety-orange" class="text-xs font-bold text-gray-100 hover:text-gray-300 uppercase tracking-widest py-2 border-b border-white/10 transition-colors">Contact</a>
           </nav>
           
           <!-- Mobile CTA Button -->
